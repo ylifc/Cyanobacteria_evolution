@@ -1,0 +1,39 @@
+####################################################################################
+#               '||'''|,          '||'''|,  .|';                                   #
+#                ||   ||           ||   ||  ||                                     #
+#                ||...|' '||  ||`  ||...|' '||'   '''|.  '||),,(|,                 #
+#                ||       `|..||   ||       ||   .|''||   || || ||                 #
+#               .||           ||  .||      .||.  `|..||. .||    ||.                #
+#                          ,  |'                                                   #
+#                           ''                                                     #
+#                                                                                  #
+#       This program is free software: you can redistribute it and/or modify       #
+#       it under the terms of the GNU General Public License as published by       #
+#        the Free Software Foundation, either version 3 of the License, or         #
+#                       (at your option) any later version.                        #
+#         This program is distributed in the hope that it will be useful,          #
+#          but WITHOUT ANY WARRANTY; without even the implied warranty of          #
+#          MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           #
+#                   GNU General Public License for more details.                   #
+#        You should have received a copy of the GNU General Public License         #
+#       along with this program. If not, see <http://www.gnu.org/licenses/>.       #
+#                                                                                  #
+#    PyPfam is a Python (lite) port of the PfamSearch scripts written in Perl.     #
+#  Perl authors: Jaina Mistry (jm14@sanger.ac.uk), John Tate (jt6@sanger.ac.uk),   #
+#                           Rob Finn (rdf@sanger.ac.uk)                            #
+#                Python authors: Aaron Mussig (a.mussig@uq.edu.au)                 #
+# ================================================================================ #
+# Execution time:           2022-04-21 20:18:47.002474
+# Query sequence file:      genomes_identify/identify/intermediate_results/marker_genes/SM03_remove2/SM03_remove2_protein.faa
+# CPU threads:              1
+# Searching against:        /home/liulab/anaconda3/envs/gtdbtk/share/gtdbtk-2.0.0/db/markers/pfam/Pfam-A.hmm
+# Resolve clan overlaps:    on
+# ================================================================================ #
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan> 
+k111_1009195_8       5    133      5    133 PF00410.20  Ribosomal_S8      Domain     1   126   126    163.4   4.1e-49   1 No_clan  
+k111_13723_2        40    201     35    202 PF01025.20  GrpE              Family     5   165   166    144.1   6.2e-43   1 No_clan  
+k111_1435794_5      60    151     56    170 PF01000.27  RNA_pol_A_bac     Domain     7   109   112     72.6   6.3e-21   1 No_clan  
+k111_1435794_9      13    134     13    134 PF00380.20  Ribosomal_S9      Family     1   121   121    146.2   1.2e-43   1 CL0329   
+k111_2132068_6       3     53      1     53 PF00466.21  Ribosomal_L10     Family    50   100   100     40.0   6.5e-11   1 No_clan  
+k111_3664347_17    244    327    239    328 PF03726.15  PNPase            Domain     6    82    83     52.4   1.1e-14   1 No_clan  
+k111_4160046_1      30    217     29    217 PF00687.22  Ribosomal_L1      Domain     2   202   204    162.5   2.1e-48   1 No_clan  

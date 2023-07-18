@@ -1,0 +1,40 @@
+####################################################################################
+#               '||'''|,          '||'''|,  .|';                                   #
+#                ||   ||           ||   ||  ||                                     #
+#                ||...|' '||  ||`  ||...|' '||'   '''|.  '||),,(|,                 #
+#                ||       `|..||   ||       ||   .|''||   || || ||                 #
+#               .||           ||  .||      .||.  `|..||. .||    ||.                #
+#                          ,  |'                                                   #
+#                           ''                                                     #
+#                                                                                  #
+#       This program is free software: you can redistribute it and/or modify       #
+#       it under the terms of the GNU General Public License as published by       #
+#        the Free Software Foundation, either version 3 of the License, or         #
+#                       (at your option) any later version.                        #
+#         This program is distributed in the hope that it will be useful,          #
+#          but WITHOUT ANY WARRANTY; without even the implied warranty of          #
+#          MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           #
+#                   GNU General Public License for more details.                   #
+#        You should have received a copy of the GNU General Public License         #
+#       along with this program. If not, see <http://www.gnu.org/licenses/>.       #
+#                                                                                  #
+#    PyPfam is a Python (lite) port of the PfamSearch scripts written in Perl.     #
+#  Perl authors: Jaina Mistry (jm14@sanger.ac.uk), John Tate (jt6@sanger.ac.uk),   #
+#                           Rob Finn (rdf@sanger.ac.uk)                            #
+#                Python authors: Aaron Mussig (a.mussig@uq.edu.au)                 #
+# ================================================================================ #
+# Execution time:           2022-04-21 20:18:47.355741
+# Query sequence file:      genomes_identify/identify/intermediate_results/marker_genes/Xenococcus_sp_PCC_7305/Xenococcus_sp_PCC_7305_protein.faa
+# CPU threads:              1
+# Searching against:        /home/liulab/anaconda3/envs/gtdbtk/share/gtdbtk-2.0.0/db/markers/pfam/Pfam-A.hmm
+# Resolve clan overlaps:    on
+# ================================================================================ #
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan> 
+NZ_ALVZ01000157.1_26     240    329    239    329 PF03726.15  PNPase            Domain     2    83    83     69.9   5.8e-20   1 No_clan  
+NZ_ALVZ01000213.1_33      33    223     33    223 PF00687.22  Ribosomal_L1      Domain     1   204   204    172.7   2.4e-51   1 No_clan  
+NZ_ALVZ01000213.1_34       4    102      3    102 PF00466.21  Ribosomal_L10     Family     2   100   100     81.6     1e-23   1 No_clan  
+NZ_ALVZ01000219.1_9       78    245     63    246 PF01025.20  GrpE              Family     6   165   166    147.5   8.3e-44   1 No_clan  
+NZ_ALVZ01000231.1_9       13     84     12     85 PF02576.18  DUF150            Domain     2    72    73     56.5   8.1e-16   1 No_clan  
+NZ_ALVZ01000232.1_38       5    133      5    133 PF00410.20  Ribosomal_S8      Domain     1   126   126    171.5     2e-51   1 No_clan  
+NZ_ALVZ01000232.1_48      75    166     69    186 PF01000.27  RNA_pol_A_bac     Domain    14   109   112     73.7   4.2e-21   1 No_clan  
+NZ_ALVZ01000232.1_52      16    137     16    137 PF00380.20  Ribosomal_S9      Family     1   121   121    143.7   1.1e-42   1 CL0329   

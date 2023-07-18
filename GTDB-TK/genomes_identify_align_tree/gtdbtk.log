@@ -1,0 +1,6 @@
+[2022-04-21 20:33:42] INFO: GTDB-Tk v2.0.0
+[2022-04-21 20:33:42] INFO: gtdbtk infer --msa_file genomes_identify_align/align/gtdbtk.bac120.user_msa.fasta.gz --out_dir genomes_identify_align_tree --cpus 64 --prot_model WAG
+[2022-04-21 20:33:42] INFO: Using GTDB-Tk reference data version r207: /home/liulab/anaconda3/envs/gtdbtk/share/gtdbtk-2.0.0/db/
+[2022-04-21 20:33:42] INFO: Inferring FastTree (WAG, SH support values) using a maximum of 64 CPUs.
+[2022-04-21 20:36:21] INFO: FastTree version: 2.1.10
+[2022-04-21 20:36:21] INFO: Done.

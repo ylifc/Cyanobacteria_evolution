@@ -1,0 +1,15 @@
+[2022-04-21 20:23:10] INFO: GTDB-Tk v2.0.0
+[2022-04-21 20:23:10] INFO: gtdbtk align --identify_dir genomes_identify --out_dir genomes_identify_align --cpus 64 --skip_gtdb_refs
+[2022-04-21 20:23:10] INFO: Using GTDB-Tk reference data version r207: /home/liulab/anaconda3/envs/gtdbtk/share/gtdbtk-2.0.0/db/
+[2022-04-21 20:23:10] INFO: Aligning markers in 226 genomes with 64 CPUs.
+[2022-04-21 20:23:10] INFO: Processing 226 genomes identified as bacterial.
+[2022-04-21 20:23:10] TASK: Generating concatenated alignment for each marker.
+[2022-04-21 20:23:11] INFO: Completed 226 genomes in 0.30 seconds (759.08 genomes/second).
+[2022-04-21 20:23:11] TASK: Aligning 120 identified markers using hmmalign 3.1b2 (February 2015).
+[2022-04-21 20:23:26] INFO: Completed 120 markers in 14.64 seconds (8.19 markers/second).
+[2022-04-21 20:23:26] TASK: Masking columns of bacterial multiple sequence alignment using canonical mask.
+[2022-04-21 20:23:26] INFO: Completed 226 sequences in 0.43 seconds (520.99 sequences/second).
+[2022-04-21 20:23:26] INFO: Masked bacterial alignment from 41,084 to 5,036 AAs.
+[2022-04-21 20:23:26] INFO: 0 bacterial user genomes have amino acids in <10.0% of columns in filtered MSA.
+[2022-04-21 20:23:26] INFO: Creating concatenated alignment for 226 bacterial user genomes.
+[2022-04-21 20:23:26] INFO: Done.

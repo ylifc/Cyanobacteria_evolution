@@ -1,0 +1,42 @@
+####################################################################################
+#               '||'''|,          '||'''|,  .|';                                   #
+#                ||   ||           ||   ||  ||                                     #
+#                ||...|' '||  ||`  ||...|' '||'   '''|.  '||),,(|,                 #
+#                ||       `|..||   ||       ||   .|''||   || || ||                 #
+#               .||           ||  .||      .||.  `|..||. .||    ||.                #
+#                          ,  |'                                                   #
+#                           ''                                                     #
+#                                                                                  #
+#       This program is free software: you can redistribute it and/or modify       #
+#       it under the terms of the GNU General Public License as published by       #
+#        the Free Software Foundation, either version 3 of the License, or         #
+#                       (at your option) any later version.                        #
+#         This program is distributed in the hope that it will be useful,          #
+#          but WITHOUT ANY WARRANTY; without even the implied warranty of          #
+#          MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           #
+#                   GNU General Public License for more details.                   #
+#        You should have received a copy of the GNU General Public License         #
+#       along with this program. If not, see <http://www.gnu.org/licenses/>.       #
+#                                                                                  #
+#    PyPfam is a Python (lite) port of the PfamSearch scripts written in Perl.     #
+#  Perl authors: Jaina Mistry (jm14@sanger.ac.uk), John Tate (jt6@sanger.ac.uk),   #
+#                           Rob Finn (rdf@sanger.ac.uk)                            #
+#                Python authors: Aaron Mussig (a.mussig@uq.edu.au)                 #
+# ================================================================================ #
+# Execution time:           2022-04-21 20:18:48.519773
+# Query sequence file:      genomes_identify/identify/intermediate_results/marker_genes/Nostoc_sp_PCC_7107/Nostoc_sp_PCC_7107_protein.faa
+# CPU threads:              1
+# Searching against:        /home/liulab/anaconda3/envs/gtdbtk/share/gtdbtk-2.0.0/db/markers/pfam/Pfam-A.hmm
+# Resolve clan overlaps:    on
+# ================================================================================ #
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan> 
+NC_019676.1_1222     69    230     61    231 PF01025.20  GrpE              Family     5   165   166    165.2   2.9e-49   1 No_clan  
+NC_019676.1_2474    240    328    239    328 PF03726.15  PNPase            Domain     2    83    83     57.7   3.8e-16   1 No_clan  
+NC_019676.1_2541     75    215     33    217 PF01025.20  GrpE              Family    23   162   166     39.7   1.2e-10   1 No_clan  
+NC_019676.1_2594     17    138     17    138 PF00380.20  Ribosomal_S9      Family     1   121   121    142.7   2.2e-42   1 CL0329   
+NC_019676.1_2598     60    151     56    171 PF01000.27  RNA_pol_A_bac     Domain     7   109   112     68.9   1.3e-19   1 No_clan  
+NC_019676.1_2608      5    133      5    133 PF00410.20  Ribosomal_S8      Domain     1   126   126    174.3   2.7e-52   1 No_clan  
+NC_019676.1_4071     13     84     12     85 PF02576.18  DUF150            Domain     2    72    73     60.6   4.3e-17   1 No_clan  
+NC_019676.1_4114      4    102      3    102 PF00466.21  Ribosomal_L10     Family     2   100   100     92.0   6.3e-27   1 No_clan  
+NC_019676.1_4115     30    220     30    220 PF00687.22  Ribosomal_L1      Domain     1   204   204    159.6   2.5e-47   1 No_clan  
+NC_019676.1_4494    489    525    479    533 PF04919.13  DUF655            Family   114   150   181     24.0   9.2e-06   1 CL0198   

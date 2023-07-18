@@ -1,0 +1,542 @@
+IQ-TREE 2.2.0-beta COVID-edition built Mar  3 2022
+
+Partition file name: cfg.txt
+Input file name: reformated_merged.fa
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 294390
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 213 taxa with 7 partitions and 8002 total sites (0% missing data)
+
+  ID  Name                                          Type	Seq	Site	Unique	Infor	Invar	Const
+   1  part1+part3+part4+part9+part10+part11+part15  AA	212	1339	1234	934	258	258
+   2  part2+part7                                   AA	212	1028	888	493	408	408
+   3  part5+part14+part18+part19                    AA	212	1762	1046	1413	221	221
+   4  part6+part17                                  AA	212	1397	1370	1173	141	141
+   5  part8+part12                                  AA	212	1533	1448	1184	262	262
+   6  part13+part16                                 AA	212	559	527	440	87	87
+   7  part20                                        AA	212	384	384	364	8	8
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.insect+I+G4:part1+part3+part4+part9+part10+part11+part15,Q.yeast+I+G4:part2+part7,GTR20+F+I+G4:part5+part14+part18+part19,VT+I+G4:part6+part17,Q.yeast+I+G4:part8+part12,LG+F+I+G4:part13+part16,Q.yeast+I+G4:part20
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  Q.insect+I+G4    -66904.616  133815.233 + 6.95e-310  133815.251 + 4.68e-310  133830.832 + 6.95e-310
+   2  Q.yeast+I+G4     -39238.106   78482.212 + 6.95e-310   78482.236 + 4.68e-310   78497.018 + 6.95e-310
+   3  GTR20+F+I+G4    -107974.961  216371.923 + 6.95e-310  216429.641 + 4.68e-310  217526.980 + 6.95e-310
+   4  VT+I+G4          -84142.683  168291.365 + 6.95e-310  168291.383 + 4.68e-310  168307.092 + 6.95e-310
+   5  Q.yeast+I+G4    -106248.417  212502.834 + 6.95e-310  212502.850 + 4.68e-310  212518.839 + 6.95e-310
+   6  LG+F+I+G4        -32192.643   64429.285 + 6.95e-310   64431.173 + 4.68e-310   64524.460 + 6.95e-310
+   7  Q.yeast+I+G4     -41293.945   82593.891 + 6.95e-310   82593.954 + 4.68e-310   82605.743 + 6.95e-310
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  Q.insect+I+G4  0.7739  Q.insect+I{0.149631}+G4{0.825183}
+   2  Q.yeast+I+G4   0.7041  Q.yeast+I{0.352729}+G4{0.679146}
+   3  GTR20+F+I+G4   0.9644  GTR20+F+I{0.0701171}+G4{0.840756}
+   4  VT+I+G4        0.8571  VT+I{0.0710724}+G4{1.16254}
+   5  Q.yeast+I+G4   1.3506  Q.yeast+I{0.155354}+G4{0.820021}
+   6  LG+F+I+G4      0.9697  LG+F+I{0.121139}+G4{0.896999}
+   7  Q.yeast+I+G4   1.9084  Q.yeast+I{0.0184471}+G4{1.19329}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -465595.7967 (s.e. 4755.4461)
+Unconstrained log-likelihood (without tree): -55412.8574
+Number of free parameters (#branches + #model parameters): 668
+Akaike information criterion (AIC) score: 932527.5935
+Corrected Akaike information criterion (AICc) score: 932649.4786
+Bayesian information criterion (BIC) score: 937195.2079
+
+Total tree length (sum of branch lengths): 20.7140
+Sum of internal branch lengths: 6.9639 (33.6191% of tree length)
+
+WARNING: 8 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon '110_maxbin.013' is drawn at root
+
++--110_maxbin.013
+|
+|           +--1G10
+|        +--|
+|        |  +--WH5701
+|     +--|
+|     |  |  +--SynAce01
+|     |  +--|
+|     |     |  +--ULC082bin1
+|     |     +--|
+|     |        +--ULC084bin3
+|  +--|
+|  |  |  +--MW101C3
+|  |  +--|
+|  |     +--ULC065bin1
++--|
+|  |                       +--2529_maxbin_009
+|  |                    +--|
+|  |                    |  +--S559_concoct_18
+|  |                 +--|
+|  |                 |  +--RS9916
+|  |              +--|
+|  |              |  |        +--794_concoct_22
+|  |              |  |     +--|
+|  |              |  |     |  |     +--MED-G135
+|  |              |  |     |  |  +--|
+|  |              |  |     |  |  |  +--S2428_maxbin_12
+|  |              |  |     |  +--|
+|  |              |  |     |     |  +**NAT40
+|  |              |  |     |     +**|
+|  |              |  |     |        +--UW105
+|  |              |  |  +--|
+|  |              |  |  |  +--UW140
+|  |              |  +--|
+|  |              |     |     +--SM01
+|  |              |     |  +--|
+|  |              |     |  |  +--SM02_metabat_51
+|  |              |     +--|
+|  |              |        +--SM03_remove2
+|  |           +--|
+|  |           |  +--SG_concoct_52
+|  |        +--|
+|  |        |  |                                +--5163_concoct_5
+|  |        |  |                             +--|
+|  |        |  |                             |  |        +--NPC_concoct_250
+|  |        |  |                             |  |     +--|
+|  |        |  |                             |  |     |  |  +--WH8102
+|  |        |  |                             |  |     |  +--|
+|  |        |  |                             |  |     |     +--WH8103
+|  |        |  |                             |  |  +**|
+|  |        |  |                             |  |  |  |     +**YX04-3
+|  |        |  |                             |  |  |  |  +**|
+|  |        |  |                             |  |  |  |  |  +**con_59_25
+|  |        |  |                             |  |  |  +--|
+|  |        |  |                             |  |  |     +--con_55_8
+|  |        |  |                             |  +--|
+|  |        |  |                             |     +--RS9915sta
+|  |        |  |                          +--|
+|  |        |  |                          |  +--AG-670-A05
+|  |        |  |                       +--|
+|  |        |  |                       |  +--SS_concoct_57
+|  |        |  |                    +--|
+|  |        |  |                    |  |           +--CC9616
+|  |        |  |                    |  |        +--|
+|  |        |  |                    |  |        |  +--TMED20
+|  |        |  |                    |  |     +--|
+|  |        |  |                    |  |     |  +--KORDI-100
+|  |        |  |                    |  |  +--|
+|  |        |  |                    |  |  |  +--MED850
+|  |        |  |                    |  +--|
+|  |        |  |                    |     |     +--KORDI-49
+|  |        |  |                    |     |  +--|
+|  |        |  |                    |     |  |  |     +--MED-G70
+|  |        |  |                    |     |  |  |  +--|
+|  |        |  |                    |     |  |  |  |  +**UBA3999
+|  |        |  |                    |     |  |  +--|
+|  |        |  |                    |     |  |     +--UBA9887
+|  |        |  |                    |     +--|
+|  |        |  |                    |        |  +--S20_concoct_291
+|  |        |  |                    |        +--|
+|  |        |  |                    |           +--S24_maxbin_4
+|  |        |  |                 +--|
+|  |        |  |                 |  |  +--AG-679-B05
+|  |        |  |                 |  +--|
+|  |        |  |                 |     +--ERR599078_concoct_11_remove
+|  |        |  |              +--|
+|  |        |  |              |  |     +--AG-670-B23
+|  |        |  |              |  |  +--|
+|  |        |  |              |  |  |  |        +--CC9605
+|  |        |  |              |  |  |  |     +--|
+|  |        |  |              |  |  |  |     |  |              +--N19
+|  |        |  |              |  |  |  |     |  |           +--|
+|  |        |  |              |  |  |  |     |  |           |  +--N32
+|  |        |  |              |  |  |  |     |  |        +--|
+|  |        |  |              |  |  |  |     |  |        |  |        +--PM7_concoct_20
+|  |        |  |              |  |  |  |     |  |        |  |     +--|
+|  |        |  |              |  |  |  |     |  |        |  |     |  |     +**REDSEA-S01_B1
+|  |        |  |              |  |  |  |     |  |        |  |     |  |  +--|
+|  |        |  |              |  |  |  |     |  |        |  |     |  |  |  +--SM04_concoct_15
+|  |        |  |              |  |  |  |     |  |        |  |     |  +**|
+|  |        |  |              |  |  |  |     |  |        |  |     |     +--REDSEA-S02_B4
+|  |        |  |              |  |  |  |     |  |        |  |  +--|
+|  |        |  |              |  |  |  |     |  |        |  |  |  |  +--S22_maxbin_021
+|  |        |  |              |  |  |  |     |  |        |  |  |  +--|
+|  |        |  |              |  |  |  |     |  |        |  |  |     +--UW86
+|  |        |  |              |  |  |  |     |  |        |  +**|
+|  |        |  |              |  |  |  |     |  |        |     +--con_58_9
+|  |        |  |              |  |  |  |     |  |     +--|
+|  |        |  |              |  |  |  |     |  |     |  |     +--N26
+|  |        |  |              |  |  |  |     |  |     |  |  +**|
+|  |        |  |              |  |  |  |     |  |     |  |  |  +--RS344
+|  |        |  |              |  |  |  |     |  |     |  +--|
+|  |        |  |              |  |  |  |     |  |     |     +--N5
+|  |        |  |              |  |  |  |     |  |  +--|
+|  |        |  |              |  |  |  |     |  |  |  +--S26_concoct_150
+|  |        |  |              |  |  |  |     |  +--|
+|  |        |  |              |  |  |  |     |     +--WH8109
+|  |        |  |              |  |  |  |  +--|
+|  |        |  |              |  |  |  |  |  +--KORDI-52
+|  |        |  |              |  |  |  +--|
+|  |        |  |              |  |  |     |  +--con_56_24
+|  |        |  |              |  |  |     +--|
+|  |        |  |              |  |  |        +--con_60_46
+|  |        |  |              |  +--|
+|  |        |  |              |     |  +--UW106
+|  |        |  |              |     +--|
+|  |        |  |              |        +--UW69
+|  |        |  |           +--|
+|  |        |  |           |  |                 +--AG-683-C23
+|  |        |  |           |  |              +--|
+|  |        |  |           |  |              |  |     +**AT04_1000_metabat_3
+|  |        |  |           |  |              |  |  +--|
+|  |        |  |           |  |              |  |  |  +--AT04_1000m_8Ar_concoct_13_remove
+|  |        |  |           |  |              |  +--|
+|  |        |  |           |  |              |     |     +--B08_0_metabat_3
+|  |        |  |           |  |              |     |  +--|
+|  |        |  |           |  |              |     |  |  +--B08_1000_metabat_1
+|  |        |  |           |  |              |     +--|
+|  |        |  |           |  |              |        |        +---------------------Kamptonema_formosum_PCC_6407
+|  |        |  |           |  |              |        |     +--|
+|  |        |  |           |  |              |        |     |  |  +**P06_0m_8Ar_concoct_9_remove
+|  |        |  |           |  |              |        |     |  +--|
+|  |        |  |           |  |              |        |     |     +--P06_300m_8Ar_maxbin_2_remove
+|  |        |  |           |  |              |        |  +--|
+|  |        |  |           |  |              |        |  |  |  +**UW024_9Ar_concoct_4
+|  |        |  |           |  |              |        |  |  +**|
+|  |        |  |           |  |              |        |  |     +--UW024_9Ar_metabat_1
+|  |        |  |           |  |              |        +--|
+|  |        |  |           |  |              |           +**UW024_maxbin_2_remove
+|  |        |  |           |  |           +--|
+|  |        |  |           |  |           |  +--AG-686-B21
+|  |        |  |           |  |        +--|
+|  |        |  |           |  |        |  |  +--B08_0m_8Ar_concoct_bin16_remove
+|  |        |  |           |  |        |  +--|
+|  |        |  |           |  |        |     +--ERR3589591_concoct_17_remove
+|  |        |  |           |  |     +--|
+|  |        |  |           |  |     |  +--CC9902
+|  |        |  |           |  |  +--|
+|  |        |  |           |  |  |  +--MED-G69
+|  |        |  |           |  +--|
+|  |        |  |           |     +--BL107
+|  |        |  |        +--|
+|  |        |  |        |  |  +--ERR3589583_concoct_19_remove
+|  |        |  |        |  +--|
+|  |        |  |        |     +--ERR3589583_metabat_1_remove
+|  |        |  |     +--|
+|  |        |  |     |  +--ERR3589583_maxbin_8_remove
+|  |        |  |  +--|
+|  |        |  |  |  |        +--AG-679-C18
+|  |        |  |  |  |     +--|
+|  |        |  |  |  |     |  +--NAT249
+|  |        |  |  |  |  +--|
+|  |        |  |  |  |  |  |  +**NP17
+|  |        |  |  |  |  |  +--|
+|  |        |  |  |  |  |     +--UBA1528
+|  |        |  |  |  +--|
+|  |        |  |  |     |              +--AT04_1000m_8Ar_concoct_12_remove
+|  |        |  |  |     |           +--|
+|  |        |  |  |     |           |  |        +--B08_0_metabat_1_remove
+|  |        |  |  |     |           |  |     +--|
+|  |        |  |  |     |           |  |     |  +--B08_1000_metabat_2_remove
+|  |        |  |  |     |           |  |  +--|
+|  |        |  |  |     |           |  |  |  |  +**ERR3589582_maxbin_7_remove
+|  |        |  |  |     |           |  |  |  +--|
+|  |        |  |  |     |           |  |  |     +**ERR3589582_metabat_1
+|  |        |  |  |     |           |  +--|
+|  |        |  |  |     |           |     +--UBA7448
+|  |        |  |  |     |        +--|
+|  |        |  |  |     |        |  |  +--BB08_1000_concoct_3_remove
+|  |        |  |  |     |        |  +--|
+|  |        |  |  |     |        |     +**BB08_1000_maxbin_5_remove
+|  |        |  |  |     |     +--|
+|  |        |  |  |     |     |  |  +**UW023_8Ar_concoct_2
+|  |        |  |  |     |     |  +--|
+|  |        |  |  |     |     |     +**UW023_8Ar_metabat_1
+|  |        |  |  |     |  +--|
+|  |        |  |  |     |  |  |  +--ERR3589591_concoct_8_remove
+|  |        |  |  |     |  |  +--|
+|  |        |  |  |     |  |     |     +--MED-G68
+|  |        |  |  |     |  |     |  +--|
+|  |        |  |  |     |  |     |  |  +--UBA1269
+|  |        |  |  |     |  |     +--|
+|  |        |  |  |     |  |        +--UBA7854
+|  |        |  |  |     +--|
+|  |        |  |  |        |     +--CC9311
+|  |        |  |  |        |  +--|
+|  |        |  |  |        |  |  +--WH8020
+|  |        |  |  |        +--|
+|  |        |  |  |           |  +--UW179B
+|  |        |  |  |           +--|
+|  |        |  |  |              +--WH8106
+|  |        |  +--|
+|  |        |     |                             +**AG-670-F22
+|  |        |     |                          +--|
+|  |        |     |                          |  +--AG-676-C06
+|  |        |     |                       +--|
+|  |        |     |                       |  +--AG-673-F03
+|  |        |     |                    +--|
+|  |        |     |                    |  |  +--ERR599078_maxbin_7_remove
+|  |        |     |                    |  +--|
+|  |        |     |                    |     +--ERR599078_metabat_2_remove
+|  |        |     |                 +--|
+|  |        |     |                 |  +--AG-676-E23
+|  |        |     |              +--|
+|  |        |     |              |  +--MITS9508
+|  |        |     |           +--|
+|  |        |     |           |  +--GEYO
+|  |        |     |        +--|
+|  |        |     |        |  +--MIT_S9220sta
+|  |        |     |     +--|
+|  |        |     |     |  |     +--MITS9504
+|  |        |     |     |  |  +--|
+|  |        |     |     |  |  |  +**MITS9509
+|  |        |     |     |  +--|
+|  |        |     |     |     +--UW179A
+|  |        |     |  +--|
+|  |        |     |  |  |  +--EAC657
+|  |        |     |  |  +--|
+|  |        |     |  |     +--YH01_metabat_14
+|  |        |     +--|
+|  |        |        |     +--S527_concoct_4
+|  |        |        |  +--|
+|  |        |        |  |  +--TMED90
+|  |        |        +--|
+|  |        |           |  +--WH7803
+|  |        |           +--|
+|  |        |              |  +--WH7805
+|  |        |              +--|
+|  |        |                 +--con_57_38
+|  |     +--|
+|  |     |  |        +--BS55D
+|  |     |  |     +--|
+|  |     |  |     |  |  +--BS56D
+|  |     |  |     |  +**|
+|  |     |  |     |     |  +**con_64_28
+|  |     |  |     |     +--|
+|  |     |  |     |        +**con_65_9
+|  |     |  |  +--|
+|  |     |  |  |  +--metabat_62_bins.13
+|  |     |  +--|
+|  |     |     |     +--RS9917
+|  |     |     |  +--|
+|  |     |     |  |  +--con_61_50
+|  |     |     +--|
+|  |     |        +--WH8101
+|  |  +--|
+|  |  |  |  +--MIT9313
+|  |  |  +--|
+|  |  |     +----scB243_495K23
+|  +--|
+|     |                                                +--83_concoct_8
+|     |                                             +--|
+|     |                                             |  |  +-----Crocosphaera_watsonii_WH_8501
+|     |                                             |  +--|
+|     |                                             |     +------Rubidibacter_lacunae_KORDI_51-2
+|     |                                          +--|
+|     |                                          |  +--Leptolyngbya_sp._PCC_7376
+|     |                                       +--|
+|     |                                       |  |     +--Myxosarcina_sp._GI1_contig_0
+|     |                                       |  |  +--|
+|     |                                       |  |  |  +--Pleurocapsa_sp._PCC_7319
+|     |                                       |  +--|
+|     |                                       |     +--Xenococcus_sp_PCC_7305
+|     |                                    +--|
+|     |                                    |  |  +--Cyanothece_sp._PCC_8801
+|     |                                    |  +--|
+|     |                                    |     |  +-----Geminocystis_herdmanii_PCC_6308
+|     |                                    |     +--|
+|     |                                    |        +---Gloeocapsa_sp._PCC_73106
+|     |                                 +--|
+|     |                                 |  +--Moorea_producens_JHB
+|     |                              +--|
+|     |                              |  |        +-----Acaryochloris_marina_MBIC11017
+|     |                              |  |     +--|
+|     |                              |  |     |  |     +---Oscillatoria_nigro-viridis_PCC_7112
+|     |                              |  |     |  |  +--|
+|     |                              |  |     |  |  |  +----Trichodesmium_erythraeum_IMS101
+|     |                              |  |     |  +--|
+|     |                              |  |     |     +---Planktothricoides_sp._SR001
+|     |                              |  |  +--|
+|     |                              |  |  |  |  +--Calothrix_sp._PCC_7103
+|     |                              |  |  |  +--|
+|     |                              |  |  |     |     +--Mastigocoleus_testarum_BC008_Contig-1
+|     |                              |  |  |     |  +--|
+|     |                              |  |  |     |  |  +--Rivularia_sp._PCC_7116
+|     |                              |  |  |     +--|
+|     |                              |  |  |        +--Richelia_intracellularis_HH01
+|     |                              |  +--|
+|     |                              |     +---Crinalium_epipsammum_PCC_9333
+|     |                           +--|
+|     |                           |  +-------Coleofasciculus_chthonoplastes_PCC_7420
+|     |                        +--|
+|     |                        |  |              +---Candidatus_Atelocyanobacterium_thalassa_isolate_ALOHA
+|     |                        |  |        +-----|
+|     |                        |  |        |     +--Cyanothece_sp._ATCC_51142
+|     |                        |  |     +--|
+|     |                        |  |     |  |     +--Cyanothece_sp._PCC_7424
+|     |                        |  |     |  |  +--|
+|     |                        |  |     |  |  |  +--Cyanothece_sp._PCC_7822
+|     |                        |  |     |  +--|
+|     |                        |  |     |     +--Pleurocapsa_sp._PCC_7327
+|     |                        |  |  +--|
+|     |                        |  |  |  +---Stanieria_cyanosphaera_PCC_7437
+|     |                        |  +--|
+|     |                        |     |    +--Dactylococcopsis_salina_PCC_8305
+|     |                        |     +----|
+|     |                        |          +--Halothece_sp._PCC_7418
+|     |                     +--|
+|     |                     |  +---Microcoleus_sp._PCC_7113
+|     |                  +--|
+|     |                  |  |           +--Calothrix_sp._336.3
+|     |                  |  |        +--|
+|     |                  |  |        |  +--Calothrix_sp._PCC_6303
+|     |                  |  |     +--|
+|     |                  |  |     |  |  +--Chlorogloeopsis_fritschii_PCC_6912
+|     |                  |  |     |  +--|
+|     |                  |  |     |     |  +--Fischerella_sp._PCC_9605
+|     |                  |  |     |     +--|
+|     |                  |  |     |        +--Mastigocladus_laminosus_UU774
+|     |                  |  |  +--|
+|     |                  |  |  |  |  +--Scytonema_tolypothrichoides_VB-61278
+|     |                  |  |  |  +--|
+|     |                  |  |  |     +--Tolypothrix_bouteillei_VB521301
+|     |                  |  +--|
+|     |                  |     |             +----Chroogloeocystis_siderophila_5.2_s.c.1
+|     |                  |     |        +----|
+|     |                  |     |        |    +--Nostoc_sp_PCC_7120
+|     |                  |     |     +--|
+|     |                  |     |     |  |  +--Nostoc_sp_PCC_7107
+|     |                  |     |     |  +--|
+|     |                  |     |     |     +--Nostoc_sp_PCC_7524
+|     |                  |     |  +--|
+|     |                  |     |  |  +--Nodularia_spumigena_CCY9414
+|     |                  |     +--|
+|     |                  |        +--Scytonema_hofmanni_UTEX_2349
+|     |               +--|
+|     |               |  |        +--Arthrospira_platensis_NIES-39
+|     |               |  |     +--|
+|     |               |  |     |  +--Lyngbya_aestuarii_BL_J_laest3
+|     |               |  |  +--|
+|     |               |  |  |  +--Planktothrix_agardhii_NIVA-CYA_126.8
+|     |               |  +--|
+|     |               |     |  +---Oscillatoria_acuminata_PCC_6304
+|     |               |     +--|
+|     |               |        +--Oscillatoria_sp._PCC_10802
+|     |            +--|
+|     |            |  |     +----Pseudanabaena_biceps_PCC_7429
+|     |            |  |  +--|
+|     |            |  |  |  +--Pseudanabaena_sp._PCC_6802
+|     |            |  +--|
+|     |            |     +-----Thermosynechococcus_elongatus_BP-1
+|     |  +---------|
+|     |  |         |                               +----------Caenarcanum_bioreactoricola_isolate_UASB_169
+|     |  |         |                        +------|
+|     |  |         |                        |      +-----Melainabacteria_bacterium_SSGW_16
+|     |  |         |                     +--|
+|     |  |         |                     |  +---------Obscuribacter_phosphatis_isolate_EBPR_351
+|     |  |         |                  +--|
+|     |  |         |                  |  |   +-----------Gastranaerophilales_bacterium_strain_UMGS1517
+|     |  |         |                  |  +---|
+|     |  |         |                  |      +--------Vampirovibrio_chlorellavorus_strain_Vc_AZ_2
+|     |  |         |               +--|
+|     |  |         |               |  |       +-------Cyanobacteria_Melainabacteria_group_bacterium_GL2-53_LSPB_72
+|     |  |         |               |  +-------|
+|     |  |         |               |          +-----Cyanobacteria_Melainabacteria_group_bacterium_S15B-MN24_RAAC_196
+|     |  |         |  +------------|
+|     |  |         |  |            +-------------------------------maxbin_53.001
+|     |  |         +--|
+|     |  |            +------Leptolyngbya_valderiana_BDU_20041
+|     +--|
+|        |     +--EIO01_concoct_5
+|        |  +--|
+|        |  |  |        +**MED-G67
+|        |  |  |     +--|
+|        |  |  |     |  +--RCC307
+|        |  |  |  +--|
+|        |  |  |  |  +--Minos11sta
+|        |  |  +--|
+|        |  |     +--UBA6965
+|        +--|
+|           |     +--MED-G71
+|           |  +--|
+|           |  |  +**TMED155
+|           +--|
+|              +--TMED19
+|
+|     +--CB0101
+|  +--|
+|  |  +--maxbin_45.003
++--|
+   |        +--CB0205
+   |     +--|
+   |     |  +--con_63_44
+   |  +--|
+   |  |  |  +**XM-24
+   |  |  +--|
+   |  |     +**con_52_13
+   +--|
+      |  +--SM03_metabat_2
+      +--|
+         |  +--con_62_3
+         +--|
+            +--maxbin_54.002
+
+Tree in newick format:
+
+(110_maxbin.013:0.0864773839,((((1G10:0.0121855039,WH5701:0.0080585558):0.0394420020,(SynAce01:0.0408679612,(ULC082bin1:0.0004653595,ULC084bin3:0.0001611362):0.0268983937):0.0315833439):0.0103357416,(MW101C3:0.0006618293,ULC065bin1:0.0002821792):0.0527683678):0.0526611688,((((((((2529_maxbin_009:0.0006201173,S559_concoct_18:0.0003100890):0.0004743576,RS9916:0.0006109695):0.0205262504,(((794_concoct_22:0.0004607770,((MED-G135:0.0001544804,S2428_maxbin_12:0.0003113164):0.0001543754,(NAT40:0.0000021106,UW105:0.0001543991):0.0000022003):0.0001600584):0.0007206856,UW140:0.0011513376):0.0264194187,((SM01:0.0257623154,SM02_metabat_51:0.0026205661):0.0188134945,SM03_remove2:0.0349900642):0.0075418362):0.0060912662):0.0068866065,SG_concoct_52:0.1017573754):0.0195259275,(((((((((((5163_concoct_5:0.0013822180,(((NPC_concoct_250:0.0003117408,(WH8102:0.0009371747,WH8103:0.0004685592):0.0010979874):0.0023509130,((YX04-3:0.0000023942,con_59_25:0.0000023251):0.0000024629,con_55_8:0.0001558040):0.0017242589):0.0000022369,RS9915sta:0.0017261984):0.0012949679):0.0146583825,AG-670-A05:0.0150919508):0.0104265559,SS_concoct_57:0.0282671547):0.0154627426,((((CC9616:0.0016656741,TMED20:0.0007252095):0.0223329064,KORDI-100:0.0093943485):0.0166315575,MED850:0.0225014861):0.0290708234,((KORDI-49:0.0001380142,((MED-G70:0.0005540398,UBA3999:0.0000022328):0.0007387904,UBA9887:0.0336282119):0.0001345617):0.0077269585,(S20_concoct_291:0.0003278627,S24_maxbin_4:0.0138508367):0.0083095528):0.0315856443):0.0136304187):0.0066596102,(AG-679-B05:0.0857259620,ERR599078_concoct_11_remove:0.0452759040):0.0130966677):0.0074742500,((AG-670-B23:0.0095270791,(((CC9605:0.0046815637,(((((N19:0.0015561733,N32:0.0007775559):0.0001549224,(((PM7_concoct_20:0.0012422551,((REDSEA-S01_B1:0.0000022072,SM04_concoct_15:0.0427776756):0.0001549068,REDSEA-S02_B4:0.0001548416):0.0000021663):0.0001549616,(S22_maxbin_021:0.0010928014,UW86:0.0012457120):0.0001539752):0.0001548369,con_58_9:0.0021833081):0.0000021351):0.0001549031,((N26:0.0015585928,RS344:0.0003202702):0.0000022033,N5:0.0007774515):0.0001553164):0.0001550235,S26_concoct_150:0.0012439281):0.0006025547,WH8109:0.0049525054):0.0007462586):0.0015887689,KORDI-52:0.0056549827):0.0015716071,(con_56_24:0.0001534436,con_60_46:0.0003121737):0.0058935049):0.0019869081):0.0039196846,(UW106:0.0026665823,UW69:0.0006078692):0.0102140292):0.0195968018):0.0391304137,((((((AG-683-C23:0.0020629100,((AT04_1000_metabat_3:0.0000020692,AT04_1000m_8Ar_concoct_13_remove:0.0026704267):0.0008357109,((B08_0_metabat_3:0.0004201789,B08_1000_metabat_1:0.0002002721):0.0007763592,(((Kamptonema_formosum_PCC_6407:0.9170926227,(P06_0m_8Ar_concoct_9_remove:0.0000020461,P06_300m_8Ar_maxbin_2_remove:0.0756852118):0.0310455459):0.0987882111,(UW024_9Ar_concoct_4:0.0000020223,UW024_9Ar_metabat_1:0.0028697955):0.0000026048):0.0002302166,UW024_maxbin_2_remove:0.0000022981):0.0010976411):0.0001963510):0.0020723975):0.0010280108,AG-686-B21:0.0022933075):0.0065663680,(B08_0m_8Ar_concoct_bin16_remove:0.0256913045,ERR3589591_concoct_17_remove:0.0065741463):0.0135407772):0.0082291332,CC9902:0.0027268337):0.0031399075,MED-G69:0.0030755793):0.0032871185,BL107:0.0065852997):0.0154901266):0.0306492451,(ERR3589583_concoct_19_remove:0.0035036817,ERR3589583_metabat_1_remove:0.0003956288):0.0073701669):0.0281744607,ERR3589583_maxbin_8_remove:0.0430916971):0.0196340753,(((AG-679-C18:0.0004969807,NAT249:0.0004721820):0.0003137921,(NP17:0.0000029189,UBA1528:0.0065843923):0.0001583662):0.0179036106,(((((AT04_1000m_8Ar_concoct_12_remove:0.0362542734,(((B08_0_metabat_1_remove:0.0015624125,B08_1000_metabat_2_remove:0.0027425447):0.0010601197,(ERR3589582_maxbin_7_remove:0.0000022982,ERR3589582_metabat_1:0.0000023276):0.0022577702):0.0009197994,UBA7448:0.0119773897):0.0037313829):0.0251496839,(BB08_1000_concoct_3_remove:0.0334993120,BB08_1000_maxbin_5_remove:0.0000021251):0.0092014450):0.0308011538,(UW023_8Ar_concoct_2:0.0000029574,UW023_8Ar_metabat_1:0.0000029763):0.0048578326):0.0164474547,(ERR3589591_concoct_8_remove:0.0311226379,((MED-G68:0.0002434876,UBA1269:0.0007484341):0.0009711642,UBA7854:0.0001908971):0.0022323164):0.0030294097):0.0065705823,((CC9311:0.0053032254,WH8020:0.0055924286):0.0051052797,(UW179B:0.0052924509,WH8106:0.0064434884):0.0048011554):0.0025178673):0.0051076153):0.0214614578):0.0302125992,((((((((((AG-670-F22:0.0000020561,AG-676-C06:0.0010840131):0.0006455542,AG-673-F03:0.0027675128):0.0003670999,(ERR599078_maxbin_7_remove:0.0275217521,ERR599078_metabat_2_remove:0.1159336094):0.0140903677):0.0019277245,AG-676-E23:0.0006415286):0.0016207739,MITS9508:0.0017980960):0.0003662940,GEYO:0.0007815371):0.0009950990,MIT_S9220sta:0.0008959152):0.0041444560,((MITS9504:0.0001549528,MITS9509:0.0000027366):0.0043412987,UW179A:0.0048551723):0.0014282374):0.0261823530,(EAC657:0.0067206868,YH01_metabat_14:0.0053591603):0.0169241868):0.0107061511,((S527_concoct_4:0.0005223142,TMED90:0.0007640061):0.0069449824,(WH7803:0.0077749420,(WH7805:0.0003877639,con_57_38:0.0003917531):0.0089760739):0.0032941799):0.0221251234):0.0150013620):0.0156296121):0.0116890176,(((BS55D:0.0017399948,(BS56D:0.0004720523,(con_64_28:0.0000024699,con_65_9:0.0000020463):0.0001576899):0.0000020965):0.0013930592,metabat_62_bins.13:0.0120960122):0.0202065054,((RS9917:0.0044179200,con_61_50:0.0034331584):0.0013014546,WH8101:0.0040532211):0.0215638861):0.0121787324):0.0354473989,(MIT9313:0.0622317033,scB243_495K23:0.2084734881):0.0195137423):0.0602668328,((((((((((((((83_concoct_8:0.0674168986,(Crocosphaera_watsonii_WH_8501:0.2484984246,Rubidibacter_lacunae_KORDI_51-2:0.2897626188):0.1019407808):0.1426803574,Leptolyngbya_sp._PCC_7376:0.0776094776):0.1270238158,((Myxosarcina_sp._GI1_contig_0:0.0960352562,Pleurocapsa_sp._PCC_7319:0.0882471769):0.0465865263,Xenococcus_sp_PCC_7305:0.1444734127):0.0742977486):0.0272514919,(Cyanothece_sp._PCC_8801:0.1594667414,(Geminocystis_herdmanii_PCC_6308:0.2561271151,Gloeocapsa_sp._PCC_73106:0.2026040626):0.0428346007):0.0280604527):0.0705152703,Moorea_producens_JHB:0.1534376629):0.0144004573,(((Acaryochloris_marina_MBIC11017:0.2479729356,((Oscillatoria_nigro-viridis_PCC_7112:0.1913528276,Trichodesmium_erythraeum_IMS101:0.2206318414):0.0382326336,Planktothricoides_sp._SR001:0.1901644232):0.0241820866):0.0238507635,(Calothrix_sp._PCC_7103:0.1586157033,((Mastigocoleus_testarum_BC008_Contig-1:0.1095110383,Rivularia_sp._PCC_7116:0.1261621538):0.0195141575,Richelia_intracellularis_HH01:0.1365218172):0.0214712634):0.1139955589):0.0209302774,Crinalium_epipsammum_PCC_9333:0.1695120061):0.0191387463):0.0895843395,Coleofasciculus_chthonoplastes_PCC_7420:0.3414383755):0.0537015614,((((Candidatus_Atelocyanobacterium_thalassa_isolate_ALOHA:0.1843514068,Cyanothece_sp._ATCC_51142:0.0459060766):0.2739545537,((Cyanothece_sp._PCC_7424:0.0459724088,Cyanothece_sp._PCC_7822:0.0563734273):0.1017135438,Pleurocapsa_sp._PCC_7327:0.1145822398):0.0131522424):0.0382010704,Stanieria_cyanosphaera_PCC_7437:0.1662581261):0.0398652633,(Dactylococcopsis_salina_PCC_8305:0.0631330335,Halothece_sp._PCC_7418:0.0417509243):0.2379808081):0.0557550444):0.0109915254,Microcoleus_sp._PCC_7113:0.1735994188):0.0367684078,((((Calothrix_sp._336.3:0.0719697640,Calothrix_sp._PCC_6303:0.1038022948):0.0235903956,(Chlorogloeopsis_fritschii_PCC_6912:0.0895013131,(Fischerella_sp._PCC_9605:0.0190914093,Mastigocladus_laminosus_UU774:0.0392225688):0.0182676582):0.0254072288):0.0127287350,(Scytonema_tolypothrichoides_VB-61278:0.0567843287,Tolypothrix_bouteillei_VB521301:0.0731073679):0.0257651962):0.0158244364,((((Chroogloeocystis_siderophila_5.2_s.c.1:0.2091189117,Nostoc_sp_PCC_7120:0.0809520727):0.2098788938,(Nostoc_sp_PCC_7107:0.0518685013,Nostoc_sp_PCC_7524:0.0387590109):0.0127191411):0.0103441062,Nodularia_spumigena_CCY9414:0.0763113900):0.0148481529,Scytonema_hofmanni_UTEX_2349:0.1060753291):0.0173905985):0.1300506175):0.0231002288,(((Arthrospira_platensis_NIES-39:0.1248032982,Lyngbya_aestuarii_BL_J_laest3:0.1092220325):0.0411787845,Planktothrix_agardhii_NIVA-CYA_126.8:0.1622150990):0.0995411769,(Oscillatoria_acuminata_PCC_6304:0.1730174525,Oscillatoria_sp._PCC_10802:0.1482998435):0.0274002174):0.0157743323):0.0232402076,((Pseudanabaena_biceps_PCC_7429:0.2090961683,Pseudanabaena_sp._PCC_6802:0.1238213309):0.1295141653,Thermosynechococcus_elongatus_BP-1:0.2489361260):0.0365658819):0.0408889675,((((((Caenarcanum_bioreactoricola_isolate_UASB_169:0.4864746130,Melainabacteria_bacterium_SSGW_16:0.2800887483):0.2998478351,Obscuribacter_phosphatis_isolate_EBPR_351:0.4473916209):0.1335199605,(Gastranaerophilales_bacterium_strain_UMGS1517:0.5046943687,Vampirovibrio_chlorellavorus_strain_Vc_AZ_2:0.3974442403):0.1673549908):0.1625931169,(Cyanobacteria_Melainabacteria_group_bacterium_GL2-53_LSPB_72:0.3687497861,Cyanobacteria_Melainabacteria_group_bacterium_S15B-MN24_RAAC_196:0.2707307779):0.3443073894):0.1496870330,maxbin_53.001:1.3224380546):0.5638760313,Leptolyngbya_valderiana_BDU_20041:0.3083862542):0.0733033677):0.4408827783,((EIO01_concoct_5:0.0175937906,(((MED-G67:0.0000027719,RCC307:0.0060800063):0.0006192898,Minos11sta:0.0009457767):0.0001867655,UBA6965:0.0005920863):0.0089721471):0.0350635156,((MED-G71:0.0001619148,TMED155:0.0000026897):0.0108445559,TMED19:0.0155556103):0.0402667793):0.0597704934):0.0325153719):0.0296545254):0.0147058749,((CB0101:0.0069699933,maxbin_45.003:0.0052852858):0.0243652002,(((CB0205:0.0029762431,con_63_44:0.0003129281):0.0001541198,(XM-24:0.0000026242,con_52_13:0.0000025910):0.0004710658):0.0082459908,(SM03_metabat_2:0.0299666779,(con_62_3:0.0026290918,maxbin_54.002:0.0009847734):0.0017720833):0.0073999288):0.0327344597):0.0475855723);
+
+TIME STAMP
+----------
+
+Date and time: Sun Apr 24 23:53:59 2022
+Total CPU time used: 165021 seconds (45h:50m:21s)
+Total wall-clock time used: 64334 seconds (17h:52m:13s)
+

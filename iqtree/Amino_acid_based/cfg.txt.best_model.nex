@@ -1,0 +1,18 @@
+#nexus
+begin sets;
+  charset part1_part3_part4_part9_part10_part11_part15 = 1-155  550-779  780-919  4229-4514  4515-4728  4729-4906  5363-5498;
+  charset part2_part7 = 156-549  2240-2873;
+  charset part5_part14_part18_part19 = 920-1152  5214-5362  6239-6928  6929-7618;
+  charset part6_part17 = 1153-2239  5929-6238;
+  charset part8_part12 = 2874-4228  4907-5084;
+  charset part13_part16 = 5085-5213  5499-5928;
+  charset part20 = 7619-8002;
+  charpartition mymodels =
+    Q.insect+I{0.149631}+G4{0.825183}: part1_part3_part4_part9_part10_part11_part15{16.0303},
+    Q.yeast+I{0.352729}+G4{0.679146}: part2_part7{14.5842},
+    GTR20+F+I{0.0701171}+G4{0.840756}: part5_part14_part18_part19{19.9756},
+    VT+I{0.0710724}+G4{1.16254}: part6_part17{17.7545},
+    Q.yeast+I{0.155354}+G4{0.820021}: part8_part12{27.9768},
+    LG+F+I{0.121139}+G4{0.896999}: part13_part16{20.086},
+    Q.yeast+I{0.0184471}+G4{1.19329}: part20{39.5305};
+end;

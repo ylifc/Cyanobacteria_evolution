@@ -1,0 +1,43 @@
+####################################################################################
+#               '||'''|,          '||'''|,  .|';                                   #
+#                ||   ||           ||   ||  ||                                     #
+#                ||...|' '||  ||`  ||...|' '||'   '''|.  '||),,(|,                 #
+#                ||       `|..||   ||       ||   .|''||   || || ||                 #
+#               .||           ||  .||      .||.  `|..||. .||    ||.                #
+#                          ,  |'                                                   #
+#                           ''                                                     #
+#                                                                                  #
+#       This program is free software: you can redistribute it and/or modify       #
+#       it under the terms of the GNU General Public License as published by       #
+#        the Free Software Foundation, either version 3 of the License, or         #
+#                       (at your option) any later version.                        #
+#         This program is distributed in the hope that it will be useful,          #
+#          but WITHOUT ANY WARRANTY; without even the implied warranty of          #
+#          MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           #
+#                   GNU General Public License for more details.                   #
+#        You should have received a copy of the GNU General Public License         #
+#       along with this program. If not, see <http://www.gnu.org/licenses/>.       #
+#                                                                                  #
+#    PyPfam is a Python (lite) port of the PfamSearch scripts written in Perl.     #
+#  Perl authors: Jaina Mistry (jm14@sanger.ac.uk), John Tate (jt6@sanger.ac.uk),   #
+#                           Rob Finn (rdf@sanger.ac.uk)                            #
+#                Python authors: Aaron Mussig (a.mussig@uq.edu.au)                 #
+# ================================================================================ #
+# Execution time:           2022-04-21 20:18:49.153705
+# Query sequence file:      genomes_identify/identify/intermediate_results/marker_genes/Calothrix_sp._PCC_7103/Calothrix_sp._PCC_7103_protein.faa
+# CPU threads:              1
+# Searching against:        /home/liulab/anaconda3/envs/gtdbtk/share/gtdbtk-2.0.0/db/markers/pfam/Pfam-A.hmm
+# Resolve clan overlaps:    on
+# ================================================================================ #
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan> 
+NZ_KB217478.1_3236    172    251    154    252 PF01025.20  GrpE              Family    86   165   166     65.5   2.4e-18   1 No_clan  
+NZ_KB217478.1_3646     16    137     16    137 PF00380.20  Ribosomal_S9      Family     1   121   121    144.3   1.3e-42   1 CL0329   
+NZ_KB217478.1_3650     60    151     56    171 PF01000.27  RNA_pol_A_bac     Domain     7   109   112     69.5   1.6e-19   1 No_clan  
+NZ_KB217478.1_3659      5    133      5    133 PF00410.20  Ribosomal_S8      Domain     1   126   126    170.7   6.6e-51   1 No_clan  
+NZ_KB217478.1_4466    441    529    427    534 PF04919.13  DUF655            Family    76   156   181     32.8   3.4e-08   1 CL0198   
+NZ_KB217478.1_4649     30    220     30    220 PF00687.22  Ribosomal_L1      Domain     1   204   204    159.8   4.1e-47   1 No_clan  
+NZ_KB217478.1_4650      6    102      3    102 PF00466.21  Ribosomal_L10     Family     4   100   100     92.9   6.2e-27   1 No_clan  
+NZ_KB217478.1_5358     74    215     48    216 PF01025.20  GrpE              Family    22   162   166     30.9   1.1e-07   1 No_clan  
+NZ_KB217478.1_5995     13     84     12     85 PF02576.18  DUF150            Domain     2    72    73     62.9   1.6e-17   1 No_clan  
+NZ_KB217478.1_6108     42    201     34    202 PF01025.20  GrpE              Family     7   165   166    160.5   1.5e-47   1 No_clan  
+NZ_KB217478.1_6898    240    328    239    328 PF03726.15  PNPase            Domain     2    83    83     56.9   1.2e-15   1 No_clan  

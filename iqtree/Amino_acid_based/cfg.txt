@@ -1,0 +1,23 @@
+#nexus
+begin sets;
+    charset part1 = 1-155;
+    charset part2 = 156-549;
+    charset part3 = 550-779;
+    charset part4 = 780-919;
+    charset part5 = 920-1152;
+    charset part6 = 1153-2239;
+    charset part7 = 2240-2873;
+    charset part8 = 2874-4228;
+    charset part9 = 4229-4514;
+    charset part10 = 4515-4728;
+    charset part11 = 4729-4906;
+    charset part12 = 4907-5084;
+    charset part13 = 5085-5213;
+    charset part14 = 5214-5362;
+    charset part15 = 5363-5498;
+    charset part16 = 5499-5928;
+    charset part17 = 5929-6238;
+    charset part18 = 6239-6928;
+    charset part19 = 6929-7618;
+    charset part20 = 7619-8002;
+end;

@@ -1,0 +1,14 @@
+[2022-04-21 20:12:43] INFO: GTDB-Tk v2.0.0
+[2022-04-21 20:12:43] INFO: gtdbtk identify -x fa --genome_dir genomes --out_dir genomes_identify --cpus 64
+[2022-04-21 20:12:43] INFO: Using GTDB-Tk reference data version r207: /home/liulab/anaconda3/envs/gtdbtk/share/gtdbtk-2.0.0/db/
+[2022-04-21 20:12:43] INFO: Identifying markers in 226 genomes with 64 threads.
+[2022-04-21 20:12:43] TASK: Running Prodigal V2.6.3 to identify genes.
+[2022-04-21 20:17:39] INFO: Completed 226 genomes in 4.93 minutes (45.86 genomes/minute).
+[2022-04-21 20:17:39] TASK: Identifying TIGRFAM protein families.
+[2022-04-21 20:18:45] INFO: Completed 226 genomes in 1.11 minutes (202.87 genomes/minute).
+[2022-04-21 20:18:45] TASK: Identifying Pfam protein families.
+[2022-04-21 20:18:50] INFO: Completed 226 genomes in 4.05 seconds (55.85 genomes/second).
+[2022-04-21 20:18:50] INFO: Annotations done using HMMER 3.1b2 (February 2015).
+[2022-04-21 20:18:50] TASK: Summarising identified marker genes.
+[2022-04-21 20:18:56] INFO: Completed 226 genomes in 6.93 seconds (32.62 genomes/second).
+[2022-04-21 20:18:56] INFO: Done.

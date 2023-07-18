@@ -1,0 +1,43 @@
+####################################################################################
+#               '||'''|,          '||'''|,  .|';                                   #
+#                ||   ||           ||   ||  ||                                     #
+#                ||...|' '||  ||`  ||...|' '||'   '''|.  '||),,(|,                 #
+#                ||       `|..||   ||       ||   .|''||   || || ||                 #
+#               .||           ||  .||      .||.  `|..||. .||    ||.                #
+#                          ,  |'                                                   #
+#                           ''                                                     #
+#                                                                                  #
+#       This program is free software: you can redistribute it and/or modify       #
+#       it under the terms of the GNU General Public License as published by       #
+#        the Free Software Foundation, either version 3 of the License, or         #
+#                       (at your option) any later version.                        #
+#         This program is distributed in the hope that it will be useful,          #
+#          but WITHOUT ANY WARRANTY; without even the implied warranty of          #
+#          MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           #
+#                   GNU General Public License for more details.                   #
+#        You should have received a copy of the GNU General Public License         #
+#       along with this program. If not, see <http://www.gnu.org/licenses/>.       #
+#                                                                                  #
+#    PyPfam is a Python (lite) port of the PfamSearch scripts written in Perl.     #
+#  Perl authors: Jaina Mistry (jm14@sanger.ac.uk), John Tate (jt6@sanger.ac.uk),   #
+#                           Rob Finn (rdf@sanger.ac.uk)                            #
+#                Python authors: Aaron Mussig (a.mussig@uq.edu.au)                 #
+# ================================================================================ #
+# Execution time:           2022-04-21 20:18:49.503511
+# Query sequence file:      genomes_identify/identify/intermediate_results/marker_genes/Cyanothece_sp._PCC_7822/Cyanothece_sp._PCC_7822_protein.faa
+# CPU threads:              1
+# Searching against:        /home/liulab/anaconda3/envs/gtdbtk/share/gtdbtk-2.0.0/db/markers/pfam/Pfam-A.hmm
+# Resolve clan overlaps:    on
+# ================================================================================ #
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan> 
+NC_014501_1156    485    524    440    531 PF04919.13  DUF655            Family   114   154   181     25.4   4.5e-06   1 CL0198   
+NC_014501_1795    111    266    101    267 PF01025.20  GrpE              Family    11   165   166    145.3   5.1e-43   1 No_clan  
+NC_014501_2712      4    102      3    102 PF00466.21  Ribosomal_L10     Family     2   100   100     89.5   4.9e-26   1 No_clan  
+NC_014501_2713     31    221     31    221 PF00687.22  Ribosomal_L1      Domain     1   204   204    160.3     2e-47   1 No_clan  
+NC_014501_4398    124    203    109    204 PF01025.20  GrpE              Family    86   165   166     46.8   9.4e-13   1 No_clan  
+NC_014501_4526     87    235     74    237 PF01025.20  GrpE              Family    14   162   166     29.5     2e-07   1 No_clan  
+NC_014501_5011     16    137     16    137 PF00380.20  Ribosomal_S9      Family     1   121   121    148.6   4.4e-44   1 CL0329   
+NC_014501_5015     61    150     56    171 PF01000.27  RNA_pol_A_bac     Domain    15   108   112     71.8   2.1e-20   1 No_clan  
+NC_014501_5025      5    133      5    133 PF00410.20  Ribosomal_S8      Domain     1   126   126    167.1   5.9e-50   1 No_clan  
+NC_014501_5354     13     84     12     85 PF02576.18  DUF150            Domain     2    72    73     63.5   7.2e-18   1 No_clan  
+NC_014501_5415    240    329    239    329 PF03726.15  PNPase            Domain     2    83    83     64.4   3.8e-18   1 No_clan  
